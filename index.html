@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi StoryMap</title>
+    <link rel="stylesheet" href="lib/leaflet.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        #map {
+            position: relative;
+        }
+        #backToIndexButton {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="content">
+            <div id="slides">
+                <!-- Diapositiva del índice -->
+                <div class="slide" data-lat="4.7128" data-lng="-74.0060" data-zoom="10">
+                    <h2>Índice</h2>
+                    <div id="index">
+                        <!-- Botones del índice se generarán dinámicamente con JavaScript -->
+                    </div>
+                </div>
+
+                <div class="slide" data-lat="4.7128" data-lng="-74.0060" data-zoom="10">
+                    <h2>Título de la Diapositiva 1</h2>
+                    <p>Contenido de la diapositiva 1.</p>
+                    <img src="assets/images/imagen1.png" alt="Imagen 1">
+                </div>
+                <div class="slide" data-lat="4.660602" data-lng="-74.085411" data-zoom="12">
+                    <h2>Título de la Diapositiva 2</h2>
+                    <p>Contenido de la diapositiva 2.</p>
+                    <img src="assets/images/imagen2.png" alt="Imagen 2">
+                </div>
+                <div class="slide" data-lat="4.7128" data-lng="-74.0060" data-zoom="12">
+                    <h2>Título de la Diapositiva 3</h2>
+                    <p>Contenido de la diapositiva 3.</p>
+                    <img src="assets/images/imagen1.png" alt="Imagen 1">
+                </div>
+                <div class="slide" data-lat="4.660602" data-lng="-74.085411" data-zoom="12">
+                    <h2>Título de la Diapositiva 4</h2>
+                    <p>Contenido de la diapositiva 4.</p>
+                    <img src="assets/images/imagen2.png" alt="Imagen 2">
+                </div>
+                <!-- Agrega más diapositivas según sea necesario -->
+            </div>
+        </div>
+        <div id="map">
+            <div id="backToIndexButton">Volver al Índice</div>
+        </div>
+    </div>
+    <script src="lib/leaflet.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
